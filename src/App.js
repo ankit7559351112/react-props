@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
+import Greeting from './Greeting';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Greeting 
+     morning="this is good morning today i will come late due to delay in train "
+     afternoon="this is warm afternoon"
+     evening="this evening is dark and doomy" />
+
     </div>
-  );
+  )
 }
 
 export default App;
